@@ -125,6 +125,22 @@ function info(inf){
     let e_li = createNode('li');
     e_li.innerHTML = `${i[0].email}`;
     append(detail, e_li);
+
+    let ip_li = createNode('li');
+    ip_li.innerHTML = `${i[0].ip_address}`;
+    append(detail, ip_li);
+
+    let ssn_li = createNode('li');
+    ssn_li.innerHTML = `${i[0].ssn}`;
+    append(detail, ssn_li);
+
+    let cc_li = createNode('li');
+    cc_li.innerHTML = `${i[0].credit_card}`;
+    append(detail, cc_li);
+
+    let sa_li = createNode('li');
+    sa_li.innerHTML = `${i[0].street_address}`;
+    append(detail, sa_li);
 }
 
 
@@ -136,3 +152,48 @@ name.addEventListener('click',(e) => {
       info(e.target.innerHTML);
 })
 
+function byID(inf) {
+    var i = asd.filter(a => a.id == inf);
+    //  console.log(i,i[0].id);
+    let id_li = createNode('li');
+    if (id_li.innerHTML != null) { new_inf() }
+    id_li.innerHTML = `${i[0].id}`;
+    append(detail, id_li);
+
+    let name_li = createNode('li');
+    name_li.innerHTML = `${i[0].first_name} ${i[0].last_name}`;
+    append(detail, name_li);
+
+    let g_li = createNode('li');
+    g_li.innerHTML = `${i[0].gender}`;
+    append(detail, g_li);
+
+    let e_li = createNode('li');
+    e_li.innerHTML = `${i[0].email}`;
+    append(detail, e_li);
+
+    let ip_li = createNode('li');
+    ip_li.innerHTML = `${i[0].ip_address}`;
+    append(detail, ip_li);
+
+    let ssn_li = createNode('li');
+    ssn_li.innerHTML = `${i[0].ssn}`;
+    append(detail, ssn_li);
+
+    let cc_li = createNode('li');
+    cc_li.innerHTML = `${i[0].credit_card}`;
+    append(detail, cc_li);
+
+    let sa_li = createNode('li');
+    sa_li.innerHTML = `${i[0].street_address}`;
+    append(detail, sa_li);
+}
+
+var submit = document.getElementById('submit');
+
+submit.addEventListener('click',(e) =>{
+    var val = document.getElementById('text').value;
+    det.style.display = 'block';
+   // console.log(val);
+   byID(val);
+} )

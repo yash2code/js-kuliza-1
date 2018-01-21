@@ -21,6 +21,20 @@ ul{
     list-style: none;
 }
 
+li{
+    text-align: auto;
+}
+
+.all:hover,.male:hover,.female:hover {
+    color:red;
+    cursor: pointer;
+}
+ 
+#name > li:hover{
+    cursor: pointer;
+    color: aquamarine;
+}
+
 
 
 

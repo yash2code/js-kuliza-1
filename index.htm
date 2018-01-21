@@ -13,42 +13,46 @@
 <body>
     <div class="wrapper">
         <div class="id">
-            <ul class="id" id="id">
             <h4>Id</h4>
+            <ul class="id" id="id">
+            
             
                 
             </ul>
         </div>
         <div class="name">
-            <ul  id="name">
             <h4>Name</h4>
-            <li>name</li>
-            <li>name</li>
+            <ul  id="name">
+            
+            
             </ul>
 
 
         </div>
         <div class="gender">
-            <ul id="gender">
             <h4>Gender</h4>
-            <li>g</li>
-            <li>g</li>
+            <ul id="gender">
+            
+            
             </ul>
 
         </div>
         <div class="email">
-            <ul id="email">
             <h4>E-mail</h4>
-            <li>em</li>
-            <li>em</li>
+            <ul id="email">
+            
+           
             </ul>
 
         </div>
+        <div class="detail">
+            
+        </div>
         <div class="filter">
             <h3>Filters-></h3>
-            <h4>All</h4>
-            <h4>Male</h4>
-            <h4>Female</h4>
+            <h4 class="all" id="all">All</h4>
+            <h4 class="male" id="male">Male</h4>
+            <h4 class="female" id="female">Female</h4>
         </div>
         <div class="input">
             <input type="text">
@@ -56,6 +60,11 @@
         </div>
     </div>
 <script src="data.js"></script>
+<script>
+    window.addEventListener('load', function () {
+        fetch_data();
+    })
+</script>
 </body>
 
 </html>

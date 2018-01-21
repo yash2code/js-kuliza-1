@@ -1,0 +1,26 @@
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.wrapper > * {
+    flex:1;
+}
+
+.filter{
+    flex-basis: 100%;
+    display: flex;
+}
+
+.filter > * {
+    flex:1;
+}
+
+
+
+
+
+
+
+
